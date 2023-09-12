@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Magrabi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="MyraStudio" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="/assets/images/magrabi.PNG">
+
+    <!-- Plugins css -->
+    <link href="/assets/plugins/datatables/dataTables.bootstrap4.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/datatables/responsive.bootstrap4.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/datatables/buttons.bootstrap4.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/datatables/select.bootstrap4.css" rel="stylesheet" type="text/css" />
+
+    <!-- App css -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/theme.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/my-style.css">
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+
+
+                <div class="d-flex align-items-left w-100">
+                    <button type="button" class="btn btn-sm mr-2 d-lg-none px-3 font-size-16 header-item waves-effect"
+                        id="vertical-menu-btn">
+                        <i class="fa fa-fw fa-bars"></i>
+                    </button>
+
+                    <!-- Create new dropdown -->
+                    <!--
+                    <div class="dropdown d-none d-sm-inline-block">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="mdi mdi-plus"></i> Create New
+                            <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
+                        </button>
+                        <div class="dropdown-menu">
+
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                Application
+                            </a>
+
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                Software
+                            </a>
+
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                EMS System
+                            </a>
+
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                CRM App
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+
+                    <div class="d-flex align-items-center ml-auto">
+
+                        <div class="dropdown d-sm-inline-block ml-2">
+                            <button type="button" class="btn header-item noti-icon waves-effect"
+                                id="page-header-search-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="mdi mdi-magnify"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                                aria-labelledby="page-header-search-dropdown">
+
+                                <form class="p-3">
+                                    <div class="form-group m-0">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search ..."
+                                                aria-label="Recipient's username">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="submit"><i
+                                                        class="mdi mdi-magnify"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Language dropdown code -->
+                        <!-- ---------------------- -->
+
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item noti-icon waves-effect"
+                                id="page-header-notifications-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="mdi mdi-bell"></i>
+                                <!-- <span class="badge badge-danger badge-pill">3</span> -->
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                                aria-labelledby="page-header-notifications-dropdown">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h6 class="m-0"> Notifications </h6>
+                                        </div>
+                                        <div class="col-auto">
+                                            <a href="#!" class="small"> View All</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-simplebar style="max-height: 230px;">
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="media">
+                                            <img src="/assets/images/users/avatar-2.jpg"
+                                                class="mr-3 rounded-circle avatar-xs" alt="user-pic">
+                                            <div class="media-body">
+                                                <h6 class="mt-0 mb-1">Samuel Coverdale</h6>
+                                                <p class="font-size-12 mb-1">You have new follower on Instagram</p>
+                                                <p class="font-size-12 mb-0 text-muted"><i
+                                                        class="mdi mdi-clock-outline"></i> 2 min ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="media">
+                                            <div class="avatar-xs mr-3">
+                                                <span class="avatar-title bg-success rounded-circle">
+                                                    <i class="mdi mdi-cloud-download-outline"></i>
+                                                </span>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="mt-0 mb-1">Download Available !</h6>
+                                                <p class="font-size-12 mb-1">Latest version of admin is now available.
+                                                    Please download here.</p>
+                                                <p class="font-size-12 mb-0 text-muted"><i
+                                                        class="mdi mdi-clock-outline"></i> 4 hours ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="media">
+                                            <img src="/assets/images/users/avatar-3.jpg"
+                                                class="mr-3 rounded-circle avatar-xs" alt="user-pic">
+                                            <div class="media-body">
+                                                <h6 class="mt-0 mb-1">Victoria Mendis</h6>
+                                                <p class="font-size-12 mb-1">Just upgraded to premium account.</p>
+                                                <p class="font-size-12 mb-0 text-muted"><i
+                                                        class="mdi mdi-clock-outline"></i> 1 day ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="p-2 border-top">
+                                    <a class="btn btn-sm btn-light btn-block text-center" href="javascript:void(0)">
+                                        <i class="mdi mdi-arrow-down-circle mr-1"></i> Load More..
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown d-inline-block ml-2">
+                            <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="rounded-circle header-profile-user" src="/assets/images/users/dummy-man.png"
+                                    alt="Header Avatar">
+                                <span class="d-none d-sm-inline-block ml-1">Jamie D.</span>
+                                <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="javascript:void(0)">
+                                    <span>Inbox</span>
+                                    <span>
+                                        <span class="badge badge-pill badge-info">3</span>
+                                    </span>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="javascript:void(0)">
+                                    <span>Profile</span>
+                                    <span>
+                                        <span class="badge badge-pill badge-warning">1</span>
+                                    </span>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="javascript:void(0)">
+                                    Settings
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="javascript:void(0)">
+                                    <span>Lock Account</span>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="javascript:void(0)">
+                                    <span>Log Out</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <div data-simplebar class="h-100">
+
+                <div class="navbar-brand-box">
+                    <a href="/home.html" class="logo">
+                        <!-- <i class="mdi mdi-alpha-x-circle"></i> -->
+                        <span>
+                            Magrabi
+                        </span>
+                    </a>
+                </div>
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li class="menu-title">Menu</li>
+
+                        <li>
+                            <a href="/home.html" class="waves-effect"><i
+                                    class="feather-airplay"></i><span>Dashboard</span></a>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect"><i
+                                    class="feather-calendar"></i><span>Schedule SMS</span></a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="/templates/template-1.html">Template 1</a></li>
+                                <li><a href="/templates/template-2.html">Template 2</a></li>
+                                <li><a href="/templates/template-3.html">Template 3</a></li>
+                                <li><a href="/templates/template-4.html">Template 4</a></li>
+                                <li><a href="/templates/template-5.html">Template 5</a></li>
+                                <li><a href="/templates/template-6.html">Template 6</a></li>
+                                <li><a href="/templates/template-7.html">Template 7</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="menu-title">Statistics</li>
+
+                        <!-- <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect"><i
+                                    class="feather-briefcase"></i><span>UI Elements</span></a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="ui-buttons.html">Buttons</a></li>
+                                <li><a href="ui-cards.html">Cards</a></li>
+                                <li><a href="ui-carousel.html">Carousel</a>
+                                <li><a href="ui-embeds.html">Embeds</a>
+                                <li><a href="ui-general.html">General</a></li>
+                                <li><a href="ui-grid.html">Grid</a></li>
+                                <li><a href="ui-media-objects.html">Media Objects</a></li>
+                                <li><a href="ui-modals.html">Modals</a></li>
+                                <li><a href="ui-progressbars.html">Progress Bars</a></li>
+                                <li><a href="ui-tabs.html">Tabs</a></li>
+                                <li><a href="ui-typography.html">Typography</a></li>
+                                <li><a href="ui-toasts.html">Toasts</a></li>
+                                <li><a href="ui-tooltips-popovers.html">Tooltips & Popovers</a></li>
+                                <li><a href="ui-scrollspy.html">Scrollspy</a></li>
+                                <li><a href="ui-spinners.html">Spinners</a></li>
+                                <li><a href="ui-sweetalerts.html">Sweet Alerts</a></li>
+                            </ul>
+                        </li> -->
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect"><i
+                                    class="feather-map-pin"></i><span>Regions</span></a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li> <a href="/regions/egypt.html">Egypt</a></li>
+                                <li><a href="/regions/KSA.html">KSA</a></li>
+                                <li><a href="/regions/UAE.html">UAE</a></li>
+                                <li><a href="/regions/Qatar.html">Qatar</a></li>
+                                <li><a href="/regions/Yemen.html">Yemen</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect"><i
+                                    class="feather-bar-chart-2"></i><span>Charts</span></a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="charts-morris.html">Morris</a></li>
+                                <li><a href="charts-google.html">Google</a></li>
+                                <li><a href="charts-chartjs.html">Chartjs</a></li>
+                                <li><a href="charts-sparkline.html">Sparkline</a></li>
+                                <li><a href="charts-knob.html">Jquery Knob</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect"><i class="feather-book"></i><span
+                                    class="badge badge-pill badge-danger float-right">6</span><span>Forms</span></a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="forms-elements.html">Elements</a></li>
+                                <li><a href="forms-plugins.html">Plugins</a></li>
+                                <li><a href="forms-validation.html">Validation</a></li>
+                                <li><a href="forms-mask.html">Masks</a></li>
+                                <li><a href="forms-quilljs.html">Quilljs</a></li>
+                                <li><a href="forms-uploads.html">File Uploads</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect"><i
+                                    class="feather-box"></i><span>Icons</span></a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="icons-materialdesign.html">Material Design</a></li>
+                                <li><a href="icons-fontawesome.html">Font awesome</a></li>
+                                <li><a href="icons-dripicons.html">Dripicons</a></li>
+                                <li><a href="icons-feather.html">Feather Icons</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-title">More</li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect"><i
+                                    class="feather-map"></i><span>Maps</span></a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="maps-google.html">Google Maps</a></li>
+                                <li><a href="maps-vector.html">Vector Maps</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect"><i
+                                    class="mdi mdi-share-variant"></i><span>Multi Level</span></a>
+                            <ul class="sub-menu" aria-expanded="true">
+                                <li><a href="javascript: void(0);">Level 1.1</a></li>
+                                <li><a href="javascript: void(0);" class="has-arrow">Level 1.2</a>
+                                    <ul class="sub-menu" aria-expanded="true">
+                                        <li><a href="javascript: void(0);">Level 2.1</a></li>
+                                        <li><a href="javascript: void(0);">Level 2.2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-flex align-items-center justify-content-between">
+                                <h4 class="mb-0 font-size-18">Kingdom of Saudi Arabia</h4>
+
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Magrabi</a></li>
+                                        <li class="breadcrumb-item active">KSA</li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Campaign 1 (Total Revenue: <span class="total-revenue">$7,780,420</span>)</h4>
+                                    <table id="basic-datatable" class="table nowrap table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Customer Name</th>
+                                                <th>Location</th>
+                                                <th>Status</th>
+                                                <th>Phone Number</th>
+                                                <th>Join Date</th>
+                                            </tr>
+                                        </thead>
+
+
+                                        <tbody>
+                                            <tr>
+                                                <td>Tiger Nixon</td>
+                                                <td>Cairo</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+25698231474</td>
+                                                <td>2011/04/25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Garrett Winters</td>
+                                                <td>Cairo</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+032164987</td>
+                                                <td>2011/07/25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ashton Cox</td>
+                                                <td>Alexandria</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+327714668</td>
+                                                <td>2009/01/12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cedric Kelly</td>
+                                                <td>Suez</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+323100147</td>
+                                                <td>2012/03/29</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Airi Satou</td>
+                                                <td>Cairo</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+9562414789</td>
+                                                <td>2008/11/28</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Brielle Williamson</td>
+                                                <td>Nasr City</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+25698231474</td>
+                                                <td>2012/12/02</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Herrod Chandler</td>
+                                                <td>Aswan</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+9641133377</td>
+                                                <td>2012/08/06</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rhona Davidson</td>
+                                                <td>Nasr City</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+96333211447</td>
+                                                <td>2010/10/14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Colleen Hurst</td>
+                                                <td>Port Said</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+3221205456</td>
+                                                <td>2009/09/15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sonya Frost</td>
+                                                <td>Ismalia</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+32649411788</td>
+                                                <td>2008/12/13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jena Gaines</td>
+                                                <td>Luxor</td>
+                                                <td class="text-success font-weight-bold">Accepted</td>
+                                                <td>+3231654967</td>
+                                                <td>2008/12/19</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Quinn Flynn</td>
+                                                <td>Hurghada</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+323100147</td>
+                                                <td>2013/03/03</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Charde Marshall</td>
+                                                <td>Giza</td>
+                                                <td class="text-success font-weight-bold">Accepted</td>
+                                                <td>+7846413134</td>
+                                                <td>2008/10/16</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Haley Kennedy</td>
+                                                <td>Senior Tanta</td>
+                                                <td class="text-success font-weight-bold">Accepted</td>
+                                                <td>+323114788</td>
+                                                <td>2012/12/18</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tatyana Fitzpatrick</td>
+                                                <td>Giza</td>
+                                                <td class="text-success font-weight-bold">Accepted</td>
+                                                <td>+323110047477</td>
+                                                <td>2010/03/17</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Michael Silva</td>
+                                                <td>Tanta</td>
+                                                <td class="text-success font-weight-bold">Accepted</td>
+                                                <td>+327714668</td>
+                                                <td>2012/11/27</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Paul Byrd</td>
+                                                <td>Qena</td>
+                                                <td class="text-success font-weight-bold">Accepted</td>
+                                                <td>+32000147755</td>
+                                                <td>2010/06/09</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gloria Little</td>
+                                                <td>Damietta</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+9641133377</td>
+                                                <td>2009/04/10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bradley Greer</td>
+                                                <td>Ismalia</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+4513315789</td>
+                                                <td>2012/10/13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dai Rios</td>
+                                                <td>Zagazig</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+3031496789</td>
+                                                <td>2012/09/26</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jenette Caldwell</td>
+                                                <td>Beni Suef</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+3231654967</td>
+                                                <td>2011/09/03</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Yuri Berry</td>
+                                                <td>Asyut</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+011477788</td>
+                                                <td>2009/06/25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Caesar Vance</td>
+                                                <td>Sohag</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+323147798</td>
+                                                <td>2011/12/12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Doris Wilder</td>
+                                                <td>Aswan</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+32649411788</td>
+                                                <td>2010/09/20</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Angelica Ramos</td>
+                                                <td>Mansoura</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+3034879411</td>
+                                                <td>2009/10/09</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gavin Joyce</td>
+                                                <td>Developer</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+303014987</td>
+                                                <td>2010/12/22</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jennifer Chang</td>
+                                                <td>Giza</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+416167911</td>
+                                                <td>2010/11/14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Brenden Wagner</td>
+                                                <td>Ismalia</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+416167911</td>
+                                                <td>2011/06/07</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fiona Green</td>
+                                                <td>Damanhour</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+3230303141</td>
+                                                <td>2010/03/11</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Shou Itou</td>
+                                                <td>Regional Marketing</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+23165164</td>
+                                                <td>2011/08/14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Michelle House</td>
+                                                <td>Nasr City</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+854136467</td>
+                                                <td>2011/06/02</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Suki Burks</td>
+                                                <td>Developer</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+16546789</td>
+                                                <td>2009/10/22</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Prescott Bartlett</td>
+                                                <td>Technical Author</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+313185955</td>
+                                                <td>2011/05/07</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gavin Cortez</td>
+                                                <td>Team Leader</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+323100147</td>
+                                                <td>2008/10/26</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Martena Mccray</td>
+                                                <td>Post-Sales support</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+0231654987</td>
+                                                <td>2011/03/09</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Unity Butler</td>
+                                                <td>Tanta</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+3034879411</td>
+                                                <td>2009/12/09</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Howard Hatfield</td>
+                                                <td>Luxor</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+0002164789</td>
+                                                <td>2008/12/16</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hope Fuentes</td>
+                                                <td>Secretary</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+4513315789</td>
+                                                <td>2010/02/12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Vivian Harrell</td>
+                                                <td>Financial Controller</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+79846123636</td>
+                                                <td>2009/02/14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Timothy Mooney</td>
+                                                <td>Luxor</td>
+                                                <td class="text-warning font-weight-bold">Expired</td>
+                                                <td>+854136467</td>
+                                                <td>2008/12/11</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bruno Nash</td>
+                                                <td>Ismalia</td>
+                                                <td class="text-warning font-weight-bold">Expired</td>
+                                                <td>+131347777788</td>
+                                                <td>2011/05/03</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sakura Yamamoto</td>
+                                                <td>Cairo</td>
+                                                <td class="text-warning font-weight-bold">Expired</td>
+                                                <td>+854136467</td>
+                                                <td>2009/08/19</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Thor Walton</td>
+                                                <td>Ismalia</td>
+                                                <td class="text-warning font-weight-bold">Expired</td>
+                                                <td>+25698231474</td>
+                                                <td>2013/08/11</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Finn Camacho</td>
+                                                <td>Alexanderia</td>
+                                                <td class="text-warning font-weight-bold">Expired</td>
+                                                <td>+3034879411</td>
+                                                <td>2009/07/07</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Serge Baldwin</td>
+                                                <td>Tanta</td>
+                                                <td class="text-warning font-weight-bold">Expired</td>
+                                                <td>+32000147755</td>
+                                                <td>2012/04/09</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Zenaida Frank</td>
+                                                <td>Ismalia</td>
+                                                <td class="text-danger font-weight-bold">Regected</td>
+                                                <td>+032164987</td>
+                                                <td>2010/01/04</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Zorita Serrano</td>
+                                                <td>Ismalia</td>
+                                                <td class="text-danger font-weight-bold">Regected</td>
+                                                <td>+1349713345</td>
+                                                <td>2012/06/01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jennifer Acosta</td>
+                                                <td>Port Said</td>
+                                                <td class="text-danger font-weight-bold">Regected</td>
+                                                <td>+323114788</td>
+                                                <td>2013/02/01</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Cara Stevens</td>
+                                                <td>Aswan</td>
+                                                <td class="text-danger font-weight-bold">Regected</td>
+                                                <td>+0231654987</td>
+                                                <td>2011/12/06</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hermione Butler</td>
+                                                <td>Giza</td>
+                                                <td class="text-danger font-weight-bold">Regected</td>
+                                                <td>+3034879411</td>
+                                                <td>2011/03/21</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lael Greer</td>
+                                                <td>Damietta</td>
+                                                <td class="text-danger font-weight-bold">Regected</td>
+                                                <td>+323147798</td>
+                                                <td>2009/02/27</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jonas Alexander</td>
+                                                <td>Cairo</td>
+                                                <td class="text-danger font-weight-bold">Deleted</td>
+                                                <td>+3231654967</td>
+                                                <td>2010/07/14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Shad Decker</td>
+                                                <td>Giza</td>
+                                                <td class="text-danger font-weight-bold">Deleted</td>
+                                                <td>+0002164789</td>
+                                                <td>2008/11/13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Michael Bruce</td>
+                                                <td>Port Said</td>
+                                                <td class="text-danger font-weight-bold">Deleted</td>
+                                                <td>+103167497</td>
+                                                <td>2011/06/27</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Donna Snider</td>
+                                                <td>Giza</td>
+                                                <td class="text-danger font-weight-bold">Deleted</td>
+                                                <td>+313185955</td>
+                                                <td>2011/01/25</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div> <!-- end card body-->
+                            </div> <!-- end card -->
+                        </div><!-- end col-->
+                    </div>
+                    <!-- end row-->
+
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <h4 class="card-title">Campaign 2 (Total Revenue: <span class="total-revenue">$6,574,624</span>)</h4>
+
+                                    <table id="datatable-buttons" class="table table-striped nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th>Customer Name</th>
+                                                <th>Location</th>
+                                                <th>Status</th>
+                                                <th>Phone Number</th>
+                                                <th>Join Date</th>
+                                            </tr>
+                                        </thead>
+
+
+                                        <tbody>
+                                            <tr>
+                                                <td>Tiger Nixon</td>
+                                                <td>Cairo</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+25698231474</td>
+                                                <td>2011/04/25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Garrett Winters</td>
+                                                <td>Cairo</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+032164987</td>
+                                                <td>2011/07/25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ashton Cox</td>
+                                                <td>Alexandria</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+327714668</td>
+                                                <td>2009/01/12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cedric Kelly</td>
+                                                <td>Suez</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+323100147</td>
+                                                <td>2012/03/29</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Airi Satou</td>
+                                                <td>Cairo</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+9562414789</td>
+                                                <td>2008/11/28</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Brielle Williamson</td>
+                                                <td>Nasr City</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+25698231474</td>
+                                                <td>2012/12/02</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Herrod Chandler</td>
+                                                <td>Aswan</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+9641133377</td>
+                                                <td>2012/08/06</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rhona Davidson</td>
+                                                <td>Nasr City</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+96333211447</td>
+                                                <td>2010/10/14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Colleen Hurst</td>
+                                                <td>Port Said</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+3221205456</td>
+                                                <td>2009/09/15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sonya Frost</td>
+                                                <td>Ismalia</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+32649411788</td>
+                                                <td>2008/12/13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jena Gaines</td>
+                                                <td>Luxor</td>
+                                                <td class="text-success font-weight-bold">Accepted</td>
+                                                <td>+3231654967</td>
+                                                <td>2008/12/19</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Quinn Flynn</td>
+                                                <td>Hurghada</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+323100147</td>
+                                                <td>2013/03/03</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Charde Marshall</td>
+                                                <td>Giza</td>
+                                                <td class="text-success font-weight-bold">Accepted</td>
+                                                <td>+7846413134</td>
+                                                <td>2008/10/16</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Haley Kennedy</td>
+                                                <td>Senior Tanta</td>
+                                                <td class="text-success font-weight-bold">Accepted</td>
+                                                <td>+323114788</td>
+                                                <td>2012/12/18</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tatyana Fitzpatrick</td>
+                                                <td>Giza</td>
+                                                <td class="text-success font-weight-bold">Accepted</td>
+                                                <td>+323110047477</td>
+                                                <td>2010/03/17</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Michael Silva</td>
+                                                <td>Tanta</td>
+                                                <td class="text-success font-weight-bold">Accepted</td>
+                                                <td>+327714668</td>
+                                                <td>2012/11/27</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Paul Byrd</td>
+                                                <td>Qena</td>
+                                                <td class="text-success font-weight-bold">Accepted</td>
+                                                <td>+32000147755</td>
+                                                <td>2010/06/09</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gloria Little</td>
+                                                <td>Damietta</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+9641133377</td>
+                                                <td>2009/04/10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bradley Greer</td>
+                                                <td>Ismalia</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+4513315789</td>
+                                                <td>2012/10/13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dai Rios</td>
+                                                <td>Zagazig</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+3031496789</td>
+                                                <td>2012/09/26</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jenette Caldwell</td>
+                                                <td>Beni Suef</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+3231654967</td>
+                                                <td>2011/09/03</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Yuri Berry</td>
+                                                <td>Asyut</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+011477788</td>
+                                                <td>2009/06/25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Caesar Vance</td>
+                                                <td>Sohag</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+323147798</td>
+                                                <td>2011/12/12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Doris Wilder</td>
+                                                <td>Aswan</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+32649411788</td>
+                                                <td>2010/09/20</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Angelica Ramos</td>
+                                                <td>Mansoura</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+3034879411</td>
+                                                <td>2009/10/09</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gavin Joyce</td>
+                                                <td>Developer</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+303014987</td>
+                                                <td>2010/12/22</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jennifer Chang</td>
+                                                <td>Giza</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+416167911</td>
+                                                <td>2010/11/14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Brenden Wagner</td>
+                                                <td>Ismalia</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+416167911</td>
+                                                <td>2011/06/07</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fiona Green</td>
+                                                <td>Damanhour</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+3230303141</td>
+                                                <td>2010/03/11</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Shou Itou</td>
+                                                <td>Regional Marketing</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+23165164</td>
+                                                <td>2011/08/14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Michelle House</td>
+                                                <td>Nasr City</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+854136467</td>
+                                                <td>2011/06/02</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Suki Burks</td>
+                                                <td>Developer</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+16546789</td>
+                                                <td>2009/10/22</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Prescott Bartlett</td>
+                                                <td>Technical Author</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+313185955</td>
+                                                <td>2011/05/07</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gavin Cortez</td>
+                                                <td>Team Leader</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+323100147</td>
+                                                <td>2008/10/26</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Martena Mccray</td>
+                                                <td>Post-Sales support</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+0231654987</td>
+                                                <td>2011/03/09</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Unity Butler</td>
+                                                <td>Tanta</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+3034879411</td>
+                                                <td>2009/12/09</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Howard Hatfield</td>
+                                                <td>Luxor</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+0002164789</td>
+                                                <td>2008/12/16</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hope Fuentes</td>
+                                                <td>Secretary</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+4513315789</td>
+                                                <td>2010/02/12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Vivian Harrell</td>
+                                                <td>Financial Controller</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+79846123636</td>
+                                                <td>2009/02/14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Timothy Mooney</td>
+                                                <td>Luxor</td>
+                                                <td class="text-warning font-weight-bold">Expired</td>
+                                                <td>+854136467</td>
+                                                <td>2008/12/11</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bruno Nash</td>
+                                                <td>Ismalia</td>
+                                                <td class="text-warning font-weight-bold">Expired</td>
+                                                <td>+131347777788</td>
+                                                <td>2011/05/03</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sakura Yamamoto</td>
+                                                <td>Cairo</td>
+                                                <td class="text-warning font-weight-bold">Expired</td>
+                                                <td>+854136467</td>
+                                                <td>2009/08/19</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Thor Walton</td>
+                                                <td>Ismalia</td>
+                                                <td class="text-warning font-weight-bold">Expired</td>
+                                                <td>+25698231474</td>
+                                                <td>2013/08/11</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Finn Camacho</td>
+                                                <td>Alexanderia</td>
+                                                <td class="text-warning font-weight-bold">Expired</td>
+                                                <td>+3034879411</td>
+                                                <td>2009/07/07</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Serge Baldwin</td>
+                                                <td>Tanta</td>
+                                                <td class="text-warning font-weight-bold">Expired</td>
+                                                <td>+32000147755</td>
+                                                <td>2012/04/09</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Zenaida Frank</td>
+                                                <td>Ismalia</td>
+                                                <td class="text-danger font-weight-bold">Regected</td>
+                                                <td>+032164987</td>
+                                                <td>2010/01/04</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Zorita Serrano</td>
+                                                <td>Ismalia</td>
+                                                <td class="text-danger font-weight-bold">Regected</td>
+                                                <td>+1349713345</td>
+                                                <td>2012/06/01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jennifer Acosta</td>
+                                                <td>Port Said</td>
+                                                <td class="text-danger font-weight-bold">Regected</td>
+                                                <td>+323114788</td>
+                                                <td>2013/02/01</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Cara Stevens</td>
+                                                <td>Aswan</td>
+                                                <td class="text-danger font-weight-bold">Regected</td>
+                                                <td>+0231654987</td>
+                                                <td>2011/12/06</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hermione Butler</td>
+                                                <td>Giza</td>
+                                                <td class="text-danger font-weight-bold">Regected</td>
+                                                <td>+3034879411</td>
+                                                <td>2011/03/21</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lael Greer</td>
+                                                <td>Damietta</td>
+                                                <td class="text-danger font-weight-bold">Regected</td>
+                                                <td>+323147798</td>
+                                                <td>2009/02/27</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jonas Alexander</td>
+                                                <td>Cairo</td>
+                                                <td class="text-danger font-weight-bold">Deleted</td>
+                                                <td>+3231654967</td>
+                                                <td>2010/07/14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Shad Decker</td>
+                                                <td>Giza</td>
+                                                <td class="text-danger font-weight-bold">Deleted</td>
+                                                <td>+0002164789</td>
+                                                <td>2008/11/13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Michael Bruce</td>
+                                                <td>Port Said</td>
+                                                <td class="text-danger font-weight-bold">Deleted</td>
+                                                <td>+103167497</td>
+                                                <td>2011/06/27</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Donna Snider</td>
+                                                <td>Giza</td>
+                                                <td class="text-danger font-weight-bold">Deleted</td>
+                                                <td>+313185955</td>
+                                                <td>2011/01/25</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div> <!-- end card body-->
+                            </div> <!-- end card -->
+                        </div><!-- end col-->
+                    </div>
+                    <!-- end row-->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Campaign 3 (Total Revenue: <span class="total-revenue">$5,364,200</span>)</h4>
+                                    <table id="state-saving-datatable"
+                                        class="table activate-select nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th>Customer Name</th>
+                                                <th>Location</th>
+                                                <th>Status</th>
+                                                <th>Phone Number</th>
+                                                <th>Join Date</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>Tiger Nixon</td>
+                                                <td>Cairo</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+25698231474</td>
+                                                <td>2011/04/25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Garrett Winters</td>
+                                                <td>Cairo</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+032164987</td>
+                                                <td>2011/07/25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ashton Cox</td>
+                                                <td>Alexandria</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+327714668</td>
+                                                <td>2009/01/12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cedric Kelly</td>
+                                                <td>Suez</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+323100147</td>
+                                                <td>2012/03/29</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Airi Satou</td>
+                                                <td>Cairo</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+9562414789</td>
+                                                <td>2008/11/28</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Brielle Williamson</td>
+                                                <td>Nasr City</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+25698231474</td>
+                                                <td>2012/12/02</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Herrod Chandler</td>
+                                                <td>Aswan</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+9641133377</td>
+                                                <td>2012/08/06</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rhona Davidson</td>
+                                                <td>Nasr City</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+96333211447</td>
+                                                <td>2010/10/14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Colleen Hurst</td>
+                                                <td>Port Said</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+3221205456</td>
+                                                <td>2009/09/15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sonya Frost</td>
+                                                <td>Ismalia</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+32649411788</td>
+                                                <td>2008/12/13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jena Gaines</td>
+                                                <td>Luxor</td>
+                                                <td class="text-success font-weight-bold">Accepted</td>
+                                                <td>+3231654967</td>
+                                                <td>2008/12/19</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Quinn Flynn</td>
+                                                <td>Hurghada</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+323100147</td>
+                                                <td>2013/03/03</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Charde Marshall</td>
+                                                <td>Giza</td>
+                                                <td class="text-success font-weight-bold">Accepted</td>
+                                                <td>+7846413134</td>
+                                                <td>2008/10/16</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Haley Kennedy</td>
+                                                <td>Senior Tanta</td>
+                                                <td class="text-success font-weight-bold">Accepted</td>
+                                                <td>+323114788</td>
+                                                <td>2012/12/18</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tatyana Fitzpatrick</td>
+                                                <td>Giza</td>
+                                                <td class="text-success font-weight-bold">Accepted</td>
+                                                <td>+323110047477</td>
+                                                <td>2010/03/17</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Michael Silva</td>
+                                                <td>Tanta</td>
+                                                <td class="text-success font-weight-bold">Accepted</td>
+                                                <td>+327714668</td>
+                                                <td>2012/11/27</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Paul Byrd</td>
+                                                <td>Qena</td>
+                                                <td class="text-success font-weight-bold">Accepted</td>
+                                                <td>+32000147755</td>
+                                                <td>2010/06/09</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gloria Little</td>
+                                                <td>Damietta</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+9641133377</td>
+                                                <td>2009/04/10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bradley Greer</td>
+                                                <td>Ismalia</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+4513315789</td>
+                                                <td>2012/10/13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dai Rios</td>
+                                                <td>Zagazig</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+3031496789</td>
+                                                <td>2012/09/26</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jenette Caldwell</td>
+                                                <td>Beni Suef</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+3231654967</td>
+                                                <td>2011/09/03</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Yuri Berry</td>
+                                                <td>Asyut</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+011477788</td>
+                                                <td>2009/06/25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Caesar Vance</td>
+                                                <td>Sohag</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+323147798</td>
+                                                <td>2011/12/12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Doris Wilder</td>
+                                                <td>Aswan</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+32649411788</td>
+                                                <td>2010/09/20</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Angelica Ramos</td>
+                                                <td>Mansoura</td>
+                                                <td class="text-warning font-weight-bold">Undeliverable</td>
+                                                <td>+3034879411</td>
+                                                <td>2009/10/09</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gavin Joyce</td>
+                                                <td>Developer</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+303014987</td>
+                                                <td>2010/12/22</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jennifer Chang</td>
+                                                <td>Giza</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+416167911</td>
+                                                <td>2010/11/14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Brenden Wagner</td>
+                                                <td>Ismalia</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+416167911</td>
+                                                <td>2011/06/07</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fiona Green</td>
+                                                <td>Damanhour</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+3230303141</td>
+                                                <td>2010/03/11</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Shou Itou</td>
+                                                <td>Regional Marketing</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+23165164</td>
+                                                <td>2011/08/14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Michelle House</td>
+                                                <td>Nasr City</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+854136467</td>
+                                                <td>2011/06/02</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Suki Burks</td>
+                                                <td>Developer</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+16546789</td>
+                                                <td>2009/10/22</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Prescott Bartlett</td>
+                                                <td>Technical Author</td>
+                                                <td class="text-success font-weight-bold">Delivered</td>
+                                                <td>+313185955</td>
+                                                <td>2011/05/07</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gavin Cortez</td>
+                                                <td>Team Leader</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+323100147</td>
+                                                <td>2008/10/26</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Martena Mccray</td>
+                                                <td>Post-Sales support</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+0231654987</td>
+                                                <td>2011/03/09</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Unity Butler</td>
+                                                <td>Tanta</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+3034879411</td>
+                                                <td>2009/12/09</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Howard Hatfield</td>
+                                                <td>Luxor</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+0002164789</td>
+                                                <td>2008/12/16</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hope Fuentes</td>
+                                                <td>Secretary</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+4513315789</td>
+                                                <td>2010/02/12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Vivian Harrell</td>
+                                                <td>Financial Controller</td>
+                                                <td class="text-warning font-weight-bold">Skipped</td>
+                                                <td>+79846123636</td>
+                                                <td>2009/02/14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Timothy Mooney</td>
+                                                <td>Luxor</td>
+                                                <td class="text-warning font-weight-bold">Expired</td>
+                                                <td>+854136467</td>
+                                                <td>2008/12/11</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bruno Nash</td>
+                                                <td>Ismalia</td>
+                                                <td class="text-warning font-weight-bold">Expired</td>
+                                                <td>+131347777788</td>
+                                                <td>2011/05/03</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sakura Yamamoto</td>
+                                                <td>Cairo</td>
+                                                <td class="text-warning font-weight-bold">Expired</td>
+                                                <td>+854136467</td>
+                                                <td>2009/08/19</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Thor Walton</td>
+                                                <td>Ismalia</td>
+                                                <td class="text-warning font-weight-bold">Expired</td>
+                                                <td>+25698231474</td>
+                                                <td>2013/08/11</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Finn Camacho</td>
+                                                <td>Alexanderia</td>
+                                                <td class="text-warning font-weight-bold">Expired</td>
+                                                <td>+3034879411</td>
+                                                <td>2009/07/07</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Serge Baldwin</td>
+                                                <td>Tanta</td>
+                                                <td class="text-warning font-weight-bold">Expired</td>
+                                                <td>+32000147755</td>
+                                                <td>2012/04/09</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Zenaida Frank</td>
+                                                <td>Ismalia</td>
+                                                <td class="text-danger font-weight-bold">Regected</td>
+                                                <td>+032164987</td>
+                                                <td>2010/01/04</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Zorita Serrano</td>
+                                                <td>Ismalia</td>
+                                                <td class="text-danger font-weight-bold">Regected</td>
+                                                <td>+1349713345</td>
+                                                <td>2012/06/01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jennifer Acosta</td>
+                                                <td>Port Said</td>
+                                                <td class="text-danger font-weight-bold">Regected</td>
+                                                <td>+323114788</td>
+                                                <td>2013/02/01</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Cara Stevens</td>
+                                                <td>Aswan</td>
+                                                <td class="text-danger font-weight-bold">Regected</td>
+                                                <td>+0231654987</td>
+                                                <td>2011/12/06</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hermione Butler</td>
+                                                <td>Giza</td>
+                                                <td class="text-danger font-weight-bold">Regected</td>
+                                                <td>+3034879411</td>
+                                                <td>2011/03/21</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lael Greer</td>
+                                                <td>Damietta</td>
+                                                <td class="text-danger font-weight-bold">Regected</td>
+                                                <td>+323147798</td>
+                                                <td>2009/02/27</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jonas Alexander</td>
+                                                <td>Cairo</td>
+                                                <td class="text-danger font-weight-bold">Deleted</td>
+                                                <td>+3231654967</td>
+                                                <td>2010/07/14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Shad Decker</td>
+                                                <td>Giza</td>
+                                                <td class="text-danger font-weight-bold">Deleted</td>
+                                                <td>+0002164789</td>
+                                                <td>2008/11/13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Michael Bruce</td>
+                                                <td>Port Said</td>
+                                                <td class="text-danger font-weight-bold">Deleted</td>
+                                                <td>+103167497</td>
+                                                <td>2011/06/27</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Donna Snider</td>
+                                                <td>Giza</td>
+                                                <td class="text-danger font-weight-bold">Deleted</td>
+                                                <td>+313185955</td>
+                                                <td>2011/01/25</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div> <!-- end card body-->
+                            </div> <!-- end card -->
+                        </div><!-- end col-->
+                    </div>
+                    <!-- end row-->
+                </div> <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            2023 ©Magrabi.
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- <div class="text-sm-right d-none d-sm-block">
+                                Design & Develop by Myra
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!-- Overlay-->
+    <div class="menu-overlay"></div>
+
+
+    <!-- jQuery  -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/metismenu.min.js"></script>
+    <script src="/assets/js/waves.js"></script>
+    <script src="/assets/js/simplebar.min.js"></script>
+
+    <!-- third party js -->
+    <script src="/assets/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="/assets/plugins/datatables/dataTables.bootstrap4.js"></script>
+    <script src="/assets/plugins/datatables/dataTables.responsive.min.js"></script>
+    <script src="/assets/plugins/datatables/responsive.bootstrap4.min.js"></script>
+    <script src="/assets/plugins/datatables/dataTables.buttons.min.js"></script>
+    <script src="/assets/plugins/datatables/buttons.bootstrap4.min.js"></script>
+    <script src="/assets/plugins/datatables/buttons.html5.min.js"></script>
+    <script src="/assets/plugins/datatables/buttons.flash.min.js"></script>
+    <script src="/assets/plugins/datatables/buttons.print.min.js"></script>
+    <script src="/assets/plugins/datatables/dataTables.keyTable.min.js"></script>
+    <script src="/assets/plugins/datatables/dataTables.select.min.js"></script>
+    <script src="/assets/plugins/datatables/pdfmake.min.js"></script>
+    <script src="/assets/plugins/datatables/vfs_fonts.js"></script>
+    <!-- third party js ends -->
+
+    <!-- Datatables init -->
+    <script src="/assets/pages/datatables-demo.js"></script>
+
+
+    <!-- App js -->
+    <script src="/assets/js/theme.js"></script>
+
+    <!-- Main Script -->
+    <script src="/assets/js/my-script.js"></script>
+
+</body>
+
+</html>
