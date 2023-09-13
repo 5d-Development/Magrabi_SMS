@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Magrabi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="MyraStudio" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="/assets/images/magrabi.PNG">
+
+    <!-- NoUiSlider -->
+    <link rel="stylesheet" href="/assets/css/nouislider.css">
+
+    <!-- Sweet Alert -->
+    <link href="/assets/plugins/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- App css -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/theme.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/my-style.css">
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+
+
+                <div class="d-flex align-items-left w-100">
+                    <button type="button" class="btn btn-sm mr-2 d-lg-none px-3 font-size-16 header-item waves-effect"
+                        id="vertical-menu-btn">
+                        <i class="fa fa-fw fa-bars"></i>
+                    </button>
+
+                    <!-- Create new dropdown -->
+                    <!--
+                    <div class="dropdown d-none d-sm-inline-block">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="mdi mdi-plus"></i> Create New
+                            <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
+                        </button>
+                        <div class="dropdown-menu">
+
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                Application
+                            </a>
+
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                Software
+                            </a>
+
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                EMS System
+                            </a>
+
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                CRM App
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+
+                    <div class="d-flex align-items-center ml-auto">
+
+                        <div class="dropdown d-sm-inline-block ml-2">
+                            <button type="button" class="btn header-item noti-icon waves-effect"
+                                id="page-header-search-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="mdi mdi-magnify"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                                aria-labelledby="page-header-search-dropdown">
+
+                                <form class="p-3">
+                                    <div class="form-group m-0">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search ..."
+                                                aria-label="Recipient's username">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="submit"><i
+                                                        class="mdi mdi-magnify"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Language dropdown code -->
+                        <!-- ---------------------- -->
+
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item noti-icon waves-effect"
+                                id="page-header-notifications-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="mdi mdi-bell"></i>
+                                <!-- <span class="badge badge-danger badge-pill">3</span> -->
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                                aria-labelledby="page-header-notifications-dropdown">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h6 class="m-0"> Notifications </h6>
+                                        </div>
+                                        <div class="col-auto">
+                                            <a href="#!" class="small"> View All</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-simplebar style="max-height: 230px;">
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="media">
+                                            <img src="/assets/images/users/avatar-2.jpg"
+                                                class="mr-3 rounded-circle avatar-xs" alt="user-pic">
+                                            <div class="media-body">
+                                                <h6 class="mt-0 mb-1">Samuel Coverdale</h6>
+                                                <p class="font-size-12 mb-1">You have new follower on Instagram</p>
+                                                <p class="font-size-12 mb-0 text-muted"><i
+                                                        class="mdi mdi-clock-outline"></i> 2 min ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="media">
+                                            <div class="avatar-xs mr-3">
+                                                <span class="avatar-title bg-success rounded-circle">
+                                                    <i class="mdi mdi-cloud-download-outline"></i>
+                                                </span>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="mt-0 mb-1">Download Available !</h6>
+                                                <p class="font-size-12 mb-1">Latest version of admin is now available.
+                                                    Please download here.</p>
+                                                <p class="font-size-12 mb-0 text-muted"><i
+                                                        class="mdi mdi-clock-outline"></i> 4 hours ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="media">
+                                            <img src="/assets/images/users/avatar-3.jpg"
+                                                class="mr-3 rounded-circle avatar-xs" alt="user-pic">
+                                            <div class="media-body">
+                                                <h6 class="mt-0 mb-1">Victoria Mendis</h6>
+                                                <p class="font-size-12 mb-1">Just upgraded to premium account.</p>
+                                                <p class="font-size-12 mb-0 text-muted"><i
+                                                        class="mdi mdi-clock-outline"></i> 1 day ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="p-2 border-top">
+                                    <a class="btn btn-sm btn-light btn-block text-center" href="javascript:void(0)">
+                                        <i class="mdi mdi-arrow-down-circle mr-1"></i> Load More..
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown d-inline-block ml-2">
+                            <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="rounded-circle header-profile-user" src="/assets/images/users/dummy-man.png"
+                                    alt="Header Avatar">
+                                <span class="d-none d-sm-inline-block ml-1">Jamie D.</span>
+                                <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="javascript:void(0)">
+                                    <span>Inbox</span>
+                                    <span>
+                                        <span class="badge badge-pill badge-info">3</span>
+                                    </span>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="javascript:void(0)">
+                                    <span>Profile</span>
+                                    <span>
+                                        <span class="badge badge-pill badge-warning">1</span>
+                                    </span>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="javascript:void(0)">
+                                    Settings
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="javascript:void(0)">
+                                    <span>Lock Account</span>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="javascript:void(0)">
+                                    <span>Log Out</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <div data-simplebar class="h-100">
+
+                <div class="navbar-brand-box">
+                    <a href="/home.html" class="logo">
+                        <!-- <i class="mdi mdi-alpha-x-circle"></i> -->
+                        <span>
+                            Magrabi
+                        </span>
+                    </a>
+                </div>
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li class="menu-title">Menu</li>
+
+                        <li>
+                            <a href="/home.html" class="waves-effect"><i
+                                    class="feather-airplay"></i><span>Dashboard</span></a>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect"><i
+                                    class="feather-calendar"></i><span>Schedule SMS</span></a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="/templates/health-link.html">Health Link</a></li>
+                                <li><a href="/templates/remind-after-time.html">Remind After a Time</a></li>
+                                <li><a href="/templates/sms-approval.html">SMS Approval</a></li>
+                                <li><a href="/templates/sms-cancel.html">SMS Cancel</a></li>
+                                <li><a href="/templates/sms-operation.html">SMS Operation</a></li>
+                                <li><a href="/templates/sms-visit-end.html">SMS Visit End</a></li>
+                                <li><a href="/templates/sms-app.html">SMS App</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="/quick-sms.html" class="waves-effect"><i class="feather-mail"></i><span>Send Quick
+                                    SMS</span></a>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect"><i
+                                    class="feather-at-sign"></i><span>Send Email</span></a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="/email/send-email.html">Compose Email</a></li>
+                                <li><a href="/regions/KSA.html">Sent</a></li>
+                                <li><a href="/regions/UAE.html">Favorites</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-title">Statistics</li>
+
+                        <!-- <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect"><i
+                                    class="feather-briefcase"></i><span>UI Elements</span></a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="ui-buttons.html">Buttons</a></li>
+                                <li><a href="ui-cards.html">Cards</a></li>
+                                <li><a href="ui-carousel.html">Carousel</a>
+                                <li><a href="ui-embeds.html">Embeds</a>
+                                <li><a href="ui-general.html">General</a></li>
+                                <li><a href="ui-grid.html">Grid</a></li>
+                                <li><a href="ui-media-objects.html">Media Objects</a></li>
+                                <li><a href="ui-modals.html">Modals</a></li>
+                                <li><a href="ui-progressbars.html">Progress Bars</a></li>
+                                <li><a href="ui-tabs.html">Tabs</a></li>
+                                <li><a href="ui-typography.html">Typography</a></li>
+                                <li><a href="ui-toasts.html">Toasts</a></li>
+                                <li><a href="ui-tooltips-popovers.html">Tooltips & Popovers</a></li>
+                                <li><a href="ui-scrollspy.html">Scrollspy</a></li>
+                                <li><a href="ui-spinners.html">Spinners</a></li>
+                                <li><a href="ui-sweetalerts.html">Sweet Alerts</a></li>
+                            </ul>
+                        </li> -->
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect"><i
+                                    class="feather-map-pin"></i><span>Regions</span></a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li> <a href="/regions/egypt.html">Egypt</a></li>
+                                <li><a href="/regions/KSA.html">KSA</a></li>
+                                <li><a href="/regions/UAE.html">UAE</a></li>
+                                <li><a href="/regions/Qatar.html">Qatar</a></li>
+                                <li><a href="/regions/Yemen.html">Yemen</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="/sms-history.html.html" class="waves-effect"><i
+                                    class="feather-file-text"></i><span>SMS History</span></a>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect"><i
+                                    class="feather-bar-chart-2"></i><span>Charts</span></a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="charts-morris.html">Morris</a></li>
+                                <li><a href="charts-google.html">Google</a></li>
+                                <li><a href="charts-chartjs.html">Chartjs</a></li>
+                                <li><a href="charts-sparkline.html">Sparkline</a></li>
+                                <li><a href="charts-knob.html">Jquery Knob</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect"><i class="feather-book"></i><span
+                                    class="badge badge-pill badge-danger float-right">6</span><span>Forms</span></a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="forms-elements.html">Elements</a></li>
+                                <li><a href="forms-plugins.html">Plugins</a></li>
+                                <li><a href="forms-validation.html">Validation</a></li>
+                                <li><a href="forms-mask.html">Masks</a></li>
+                                <li><a href="forms-quilljs.html">Quilljs</a></li>
+                                <li><a href="forms-uploads.html">File Uploads</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect"><i
+                                    class="feather-box"></i><span>Icons</span></a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="icons-materialdesign.html">Material Design</a></li>
+                                <li><a href="icons-fontawesome.html">Font awesome</a></li>
+                                <li><a href="icons-dripicons.html">Dripicons</a></li>
+                                <li><a href="icons-feather.html">Feather Icons</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-title">More</li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect"><i
+                                    class="feather-map"></i><span>Maps</span></a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="maps-google.html">Google Maps</a></li>
+                                <li><a href="maps-vector.html">Vector Maps</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect"><i
+                                    class="mdi mdi-share-variant"></i><span>Multi Level</span></a>
+                            <ul class="sub-menu" aria-expanded="true">
+                                <li><a href="javascript: void(0);">Level 1.1</a></li>
+                                <li><a href="javascript: void(0);" class="has-arrow">Level 1.2</a>
+                                    <ul class="sub-menu" aria-expanded="true">
+                                        <li><a href="javascript: void(0);">Level 2.1</a></li>
+                                        <li><a href="javascript: void(0);">Level 2.2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-flex align-items-center justify-content-between">
+                                <h4 class="mb-0 font-size-18">Compose Email</h4>
+
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Magrabi</a></li>
+                                        <li class="breadcrumb-item active">Compose Email</li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <div class="row">
+                        <div class="col-10 m-auto">
+                            <div class="card">
+                                <div class="card-body">
+                                    <!-- <h4 class="card-title">Form Controls </h4> -->
+                                    <form id="quick-sms-form" class="needs-validation" novalidate>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="choose-branch-select">Select Branch (Optional)</label>
+                                                    <select class="form-control" id="choose-branch-select">
+                                                        <option value="all">All</option>
+                                                        <option value="egypt">Egypt</option>
+                                                        <option value="ksa">KSA</option>
+                                                        <option value="uae">UAE</option>
+                                                        <option value="qatar">Qatar</option>
+                                                        <option value="yemen">Yemen</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="customer-group">Customer Group</label>
+                                            <select multiple class="form-control" id="customer-group" required>
+                                                <option>Group 1</option>
+                                                <option>Group 2</option>
+                                                <option>Group 3</option>
+                                                <option>Group 4</option>
+                                                <option>Group 5</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="sms-content">SMS Content</label>
+                                            <textarea class="form-control" id="sms-content" rows="3"
+                                                placeholder="Message..." required></textarea>
+                                        </div>
+
+                                        
+
+                                    </form>
+                                    <button id="send-email-btn"
+                                            class="btn btn-success btn-block waves-effect waves-light mt-3"
+                                            >Send</button>
+                                </div>
+                                <!-- end card-body-->
+                            </div>
+                            <!-- end card -->
+                        </div> <!-- end col -->
+
+
+                    </div>
+                    <!-- end row-->
+
+                </div> <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            2019 ©Magrabi.
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- <div class="text-sm-right d-none d-sm-block">
+                                Design & Develop by Myra
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!-- Overlay-->
+    <div class="menu-overlay"></div>
+
+
+    <!-- jQuery  -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/metismenu.min.js"></script>
+    <script src="/assets/js/waves.js"></script>
+    <script src="/assets/js/simplebar.min.js"></script>
+
+    <!-- App js -->
+    <script src="/assets/js/theme.js"></script>
+
+    <!-- NoUiSlider -->
+    <script src="/assets/plugins/nouislider/nouislider.min.js"></script>
+
+    <!-- Sweet Alerts Js-->
+    <script src="/assets/plugins/sweetalert2/sweetalert2.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="/assets/js/my-script.js"></script>
+
+    <!-- SMTP JS -->
+    <script src="/assets/plugins/smtpjs/smtp.js"></script>
+
+    <!-- Template Script -->
+    <script src="/assets/js/email/compose-email.js"></script>
+</body>
+
+</html>

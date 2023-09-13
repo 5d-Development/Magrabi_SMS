@@ -4,4 +4,9 @@
 
 .card-title .total-revenue {
   color: rgb(0, 180, 0);
+}
+
+.noUi-horizontal .noUi-handle-upper .noUi-tooltip,
+.noUi-horizontal .noUi-handle-lower .noUi-tooltip {
+  bottom: -34px;
 }/*# sourceMappingURL=my-style.css.map */
