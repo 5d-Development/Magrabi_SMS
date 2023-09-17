@@ -21,11 +21,20 @@
     <link href="/assets/plugins/datatables/buttons.bootstrap4.css" rel="stylesheet" type="text/css" />
     <link href="/assets/plugins/datatables/select.bootstrap4.css" rel="stylesheet" type="text/css" />
 
+    <!-- Sweet Alert -->
+    <link href="/assets/plugins/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+
     <!-- App css -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <link href="/assets/css/theme.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/assets/css/my-style.css">
+
+    <style>
+        .selected .sorting_1 {
+            background-color: #7266bb !important;
+        }
+    </style>
 
 </head>
 
@@ -33,13 +42,45 @@
 
     <!-- Begin page -->
     <div id="layout-wrapper">
+
         <header id="page-topbar">
             <div class="navbar-header">
+
+
                 <div class="d-flex align-items-left w-100">
                     <button type="button" class="btn btn-sm mr-2 d-lg-none px-3 font-size-16 header-item waves-effect"
                         id="vertical-menu-btn">
                         <i class="fa fa-fw fa-bars"></i>
                     </button>
+
+                    <!-- Create new dropdown -->
+                    <!--
+                    <div class="dropdown d-none d-sm-inline-block">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="mdi mdi-plus"></i> Create New
+                            <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
+                        </button>
+                        <div class="dropdown-menu">
+
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                Application
+                            </a>
+
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                Software
+                            </a>
+
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                EMS System
+                            </a>
+
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                CRM App
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
 
                     <div class="d-flex align-items-center ml-auto">
 
@@ -352,12 +393,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-flex align-items-center justify-content-between">
-                                <h4 class="mb-0 font-size-18">Sent Emails</h4>
+                                <h4 class="mb-0 font-size-18">Schedule SMS (Remind After a Time)</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Magrabi</a></li>
-                                        <li class="breadcrumb-item active">Sent</li>
+                                        <li class="breadcrumb-item">UAE</li>
+                                        <li class="breadcrumb-item active">Schedule SMS</li>
                                     </ol>
                                 </div>
 
@@ -366,27 +408,103 @@
                     </div>
                     <!-- end page title -->
 
-                    <div class="">
-                        <table id="sent-emails-table" class="table activate-select nowrap table-striped">
-                            <thead>
-                                <tr>
-                                    <th>To</th>
-                                    <th>Subject</th>
-                                    <th>Body</th>
-                                </tr>
-                            </thead>
+                    <div class="row">
+                        <div class="col-10 m-auto">
+                            <div class="card">
+                                <div class="card-body">
+                                    <!-- <h4 class="card-title">Form Controls </h4> -->
+                                    <form id="schedule-sms-form-1" class="needs-validation" novalidate>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="choose-branch-select">Recipients Phone Numbers</label>
+                                                   <input type="text" class="form-control" id="recipents-phone-numbers" placeholder="Enters Phone Numbers Separated by Commas (,)">
+                                                </div>
+                                            </div>
 
-                            <tbody id="table-body">
-                                <tr>
-                                    <td>mohamed.saber@5d-agency.com</td>
-                                    <td>hello world</td>
-                                    <td>this is the email body</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="choose-campaign-select">Select Campaign</label>
+                                                    <select class="form-control" id="choose-campaign-select">
+                                                        <option>Campaign 1</option>
+                                                        <option>Campaign 2</option>
+                                                        <option>Campaign 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
 
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="delivery-time">Delivery Time</label>
+                                                    <input type="time" id="delivery-time" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="age-range">Select Age</label>
+                                                    <div id="age-range"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- <div class="form-group">
+                                            <label for="customer-group">Customer Group</label>
+                                            <select multiple class="form-control" id="customer-group" required>
+                                                <option>Group 1</option>
+                                                <option>Group 2</option>
+                                                <option>Group 3</option>
+                                                <option>Group 4</option>
+                                                <option>Group 5</option>
+                                            </select>
+                                        </div> -->
+
+                                        <div class="form-group">
+                                            <label for="sms-content">SMS Content</label>
+                                            <textarea class="form-control" id="sms-content" rows="3"
+                                                placeholder="Message..." required></textarea>
+                                        </div>
+
+                                        <button id="submit-form-btn"
+                                            class="btn btn-success btn-block waves-effect waves-light mt-3 w-50 mx-auto d-block"
+                                            type="submit">Filter Customers</button>
+
+                                    </form>
+                                </div>
+                                <!-- end card-body-->
+                            </div>
+                            <!-- end card -->
+                        </div> <!-- end col -->
                     </div>
                     <!-- end row-->
+
+                    <div class="row d-none" id="result-table">
+                        <div class="col-10 m-auto">
+                            <button id="delete-rows" class="btn btn-danger waves-effect waves-light mb-3">Delete
+                                Selected Rows</button>
+
+                            <table id="filtered-table" class="table activate-select nowrap table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Customer Name</th>
+                                        <th>Age</th>
+                                        <th>Phone Number</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody id="table-body">
+                                </tbody>
+                            </table>
+                            <button id="delete-rows" class="btn btn-primary waves-effect waves-light mt-3"
+                                style="width: 100px;">Send</button>
+                        </div>
+                    </div>
+
 
                 </div> <!-- container-fluid -->
             </div>
@@ -396,7 +514,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
-                            2019 ©Magrabi.
+                            2023 ©Magrabi.
                         </div>
                         <div class="col-sm-6">
                             <!-- <div class="text-sm-right d-none d-sm-block">
@@ -442,11 +560,17 @@
     <!-- App js -->
     <script src="/assets/js/theme.js"></script>
 
+    <!-- NoUiSlider -->
+    <script src="/assets/plugins/nouislider/nouislider.min.js"></script>
+
+    <!-- Sweet Alerts Js-->
+    <script src="/assets/plugins/sweetalert2/sweetalert2.min.js"></script>
+
     <!-- Main Script -->
     <script src="/assets/js/my-script.js"></script>
 
     <!-- Template Script -->
-    <script src="/assets/js/email/sent.js"></script>
+    <script src="/assets/js/Templates/health-link.js"></script>
 </body>
 
 </html>

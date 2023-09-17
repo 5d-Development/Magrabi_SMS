@@ -13,3 +13,12 @@
             }, false)
         })
 })();
+
+// HTML input date default value
+document.querySelectorAll('input[type=date]')?.forEach(element => {
+    element.setAttribute('value', new Date().toISOString().split('T')[0]);
+});
+
+document.querySelectorAll('input[type=time]')?.forEach(element => {
+    element.setAttribute('value', `${new Date().getHours()}:${String(new Date().getMinutes()).padStart(2, '0')}`)
+});

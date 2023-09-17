@@ -87,43 +87,32 @@ $(function () {
       gridLineColor: '#cfcfcf',
       lineColors: ['#f15050'],
       data: [{
-        y: '2015',
-        a: 180,
+        x: 'KSA',
+        y: 350000,
       },
       {
-        y: '2016',
-        a: 150,
+        x: 'Egypt',
+        y: 1500000,
       },
       {
-        y: '2017',
-        a: 190,
+        x: 'UAE',
+        y: 520000,
       },
       {
-        y: '2018',
-        a: 120,
+        x: 'Qatar',
+        y: 1200000,
       },
       {
-        y: '2019',
-        a: 200,
+        x: 'Yemen',
+        y: 200000,
       },
-      {
-        y: '2020',
-        a: 170,
-      },
-      {
-        y: '2021',
-        a: 170,
-      },
-      {
-        y: '2022',
-        a: 150,
-      }
       ],
-      xkey: 'y',
-      ykeys: ['a'],
+      xkey: 'x',
+      ykeys: ['y'],
+      parseTime: false,
       hideHover: 'auto',
       resize: true,
-      labels: ['$k']
+      labels: ['SMS']
     });
   }
 });

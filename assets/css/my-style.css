@@ -9,4 +9,15 @@
 .noUi-horizontal .noUi-handle-upper .noUi-tooltip,
 .noUi-horizontal .noUi-handle-lower .noUi-tooltip {
   bottom: -34px;
+}
+
+#sidebar-menu hr {
+  border-bottom: solid 1px #a7b1c2;
+  margin: 15px;
+}
+
+.filter-btn {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 2rem;
 }/*# sourceMappingURL=my-style.css.map */
